@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/captcha.js" async></script>
+</head>
+<body>
+    <div id="captcha"></div>
+    <script>
+        captcha({
+            el: '#captcha',
+            width: 200,
+            height: 100,
+            code: '1234',
+            success: function () {
+                alert('验证成功');
+            },
+            error: function () {
+                alert('验证失败');
+            }
+        });
+    </script>
+</body>
+</html>
